@@ -31,13 +31,21 @@ public class TicTacToe {
         System.out.println("board:");
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
-
+                    // TO DO: must determine how i want to show the values on the board
                 int x = i * SIZE + j + 1;
                 System.out.print(x + " ");
             }
             System.out.println();
 
         }
+    }
+
+    public int readMove(){
+        // temp
+        return; -1;
+    }
+
+    public void makeMove(Player player, int position) {
 
     }
 
@@ -48,6 +56,20 @@ public class TicTacToe {
         initBoard();
         showBoard();
 
+        Player currentPlayer = player1;
+
+        // while not win
+          // read move
+          // make move
+          // show board
+          // test win
+          // change player ?
+          // this "if" will be in the big while
+          if(currentPlayer == player1) {
+              currentPlayer = player2;
+          } else {
+              currentPlayer = player1;
+          }
     }
 
 
